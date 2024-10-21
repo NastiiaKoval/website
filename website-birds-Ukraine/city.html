@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Міські птахи України</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="./dist/output.css" as="style">
+    <link rel="preload" href="./src/listOfBirds.js" as="script">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="bg-custom1-100 font-sans">
+    <header class="bg-gradient-to-r from-custom1-500 to-custom1-700 text-white p-5">
+        <nav class="container mx-auto flex flex-row-reverse md:flex-row items-center justify-between p-4">
+            <a href="./index.html">
+                <img class="h-20" src="./images/logo.png" alt="logo">
+            </a>
+            <div class="mobile-menu">
+                <button id="burger-btn" class="text-white focus:outline-none md:hidden p-3">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7">
+                        </path>
+                    </svg>
+                </button>
+                <ul class="nav-list hidden md:flex md:space-x-4">
+                    <li class="px-4 py-2 hover:shadow-xl hover:transition hover:duration-300 hover:ease-in-out"><a
+                            href="./index.html"
+                            class="transition-colors duration-300 ease-in-out hover:text-custom1-200">Головна</a></li>
+                    <li class="px-4 py-2 hover:shadow-xl hover:transition hover:duration-300 hover:ease-in-out"><a
+                            href="./forest.html"
+                            class="transition-colors duration-300 ease-in-out hover:text-custom1-200">Ліси</a></li>
+                    <li class="px-4 py-2 hover:shadow-xl hover:transition hover:duration-300 hover:ease-in-out"><a
+                            href="./water.html"
+                            class="transition-colors duration-300 ease-in-out hover:text-custom1-200">Водойми</a></li>
+                    <li class="px-4 py-2 hover:shadow-xl hover:transition hover:duration-300 hover:ease-in-out"><a
+                            href="./city.html"
+                            class="transition-colors duration-300 ease-in-out hover:text-custom1-200">Міста</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="welcome text-center pb-16">
+            <h1 class="text-4xl font-bold">Міські птахи України</h1>
+        </div>
+    </header>
+
+    <div class="bg-white text-custom1-800">
+        <section class="container mx-auto p-10 md:p-20 flex relative flex-col items-center md:flex-row">
+            <div class="md:mr-8 w-1/2">
+                <img class="h-full w-full" src="./images/city.png" alt="forest">
+            </div>
+            <div class="flex flex-col justify-center">
+                <p class="">Міста України є домом для різноманітних видів птахів, які адаптувалися до життя
+                    в цьому середовищі. До них належать як
+                    дрібні птахи, такі як горобці, так і великі птахи, такі як сови та ворони.</p>
+                <p class="">
+                    Міські птахи харчуються різними видами кормів, включаючи зерно, ягоди, фрукти та комах. Вони
+                    відіграють важливу роль у
+                    природі, допомагаючи регулювати чисельність цих тварин.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="bg-custom1-100 p-8 text-custom1-800">
+        <div id="birds-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Список птахів -->
+        </div>
+    </div>
+
+    <footer class="bg-custom1-700 text-white p-4 text-center sticky bottom-0">
+        &copy; 2024 Пташиний світ України
+    </footer>
+
+    <script src="./src/script.js"></script>
+    <script src="./src/listOfBirds.js"></script>
+</body>
+
+</html>

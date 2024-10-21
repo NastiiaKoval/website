@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пташиний світ України</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="bg-custom1-100 font-sans">
+    <header class="bg-gradient-to-r from-custom1-500 to-custom1-700 text-white p-5">
+        <nav class="container mx-auto flex flex-row-reverse md:flex-row items-center justify-between p-4">
+            <a href="./index.html">
+                <img class="h-20" src="./images/logo.png" alt="logo">
+            </a>
+            <div class="mobile-menu">
+                <button id="burger-btn" class="text-white focus:outline-none md:hidden p-3">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7">
+                        </path>
+                    </svg>
+                </button>
+                <ul class="nav-list hidden md:flex md:space-x-4">
+                    <li class="px-4 py-2 hover:shadow-xl hover:transition hover:duration-300 hover:ease-in-out"><a
+                            href="./index.html"
+                            class="transition-colors duration-300 ease-in-out hover:text-custom1-200">Головна</a></li>
+                    <li class="px-4 py-2 hover:shadow-xl hover:transition hover:duration-300 hover:ease-in-out"><a
+                            href="./forest.html"
+                            class="transition-colors duration-300 ease-in-out hover:text-custom1-200">Ліси</a></li>
+                    <li class="px-4 py-2 hover:shadow-xl hover:transition hover:duration-300 hover:ease-in-out"><a
+                            href="./water.html"
+                            class="transition-colors duration-300 ease-in-out hover:text-custom1-200">Водойми</a></li>
+                    <li class="px-4 py-2 hover:shadow-xl hover:transition hover:duration-300 hover:ease-in-out"><a
+                            href="./city.html"
+                            class="transition-colors duration-300 ease-in-out hover:text-custom1-200">Міста</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="welcome text-center pb-9">
+            <h2 class="text-xl font-light">Ласкаво просимо до</h2>
+            <h1 class="text-4xl font-bold">Пташиного світу України</h1>
+        </div>
+    </header>
+
+    <div class="bg-white text-custom1-800">
+        <section class="container mx-auto p-10 md:p-20 flex relative flex-col-reverse items-center md:flex-row">
+            <div class="md:mr-8 w-1/2">
+                <img src="./images/bird.png" alt="bird" class="w-full h-full object-contain">
+            </div>
+            <div class="flex flex-col justify-center">
+                <h2 class="text-2xl font-bold mb-4">Про нас</h2>
+                <p class="my-1">Ми запрошуємо вас у захопливу подорож пташиним світом України! Наш сайт – це не просто
+                    довідник, а й простір для
+                    спілкування з природою. Ми прагнемо:
+                </p>
+                <ul class="px-5">
+                    <li class="list-disc">
+                        Познайомити вас ближче з різноманітністю птахів, які мешкають в Україні.
+                    </li>
+                    <li class="list-disc">
+                        Розповісти про їхній спосіб життя та роль в екосистемі.
+                    </li>
+                    <li class="list-disc">
+                        Надихнути на дбайливе ставлення до природи та збереження пташиного різноманіття.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="bg-custom1-100 p-8 text-custom1-800">
+        <h2 class="text-2xl font-bold mb-4 text-center">Місця проживання птахів</h2>
+        <p class="mb-4 text-center">Відкрийте для себе дивовижний світ птахів, які обирають для життя різноманітні
+            куточки нашої країни:</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-8 mb-8">
+            <div class="bg-white border-0 rounded-md p-4 hover:shadow-lg transition transform duration-300 ease-in-out">
+                <div class="flex-none p-10">
+                    <a href="./forest.html">
+                        <img src="./images/forest.png" alt="Forest" class="w-full h-full">
+                        <p class="text-center mt-2 font-semibold text-lg">Ліси</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white border-0 rounded-md p-4 hover:shadow-lg transition transform duration-300 ease-in-out">
+                <div class="flex-none p-10">
+                    <a href="./water.html">
+                        <img src="./images/water.png" alt="Water" class="w-full h-full">
+                        <p class="text-center mt-2 font-semibold text-lg">Водойми</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white border-0 rounded-md p-4 hover:shadow-lg transition transform duration-300 ease-in-out">
+                <div class="flex-none p-10">
+                    <a href="./city.html">
+                        <img src="./images/city.png" alt="City" class="w-full h-full">
+                        <p class="text-center mt-2 font-semibold text-lg">Міста</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white text-custom1-800">
+        <section class="container mx-auto p-10 md:p-20 flex relative flex-col-reverse items-center md:flex-row">
+            <div class="flex flex-col justify-center">
+                <h2 class="text-2xl font-bold mb-4">Долучайтесь до збереження пташиного світу!</h2>
+                <p class="my-1">Дізнайтеся, як ви можете допомогти птахам у вашому регіоні:
+                </p>
+                <ul class="px-5">
+                    <li class="list-disc">
+                        Створення штучних гніздівель
+                    </li>
+                    <li class="list-disc">
+                        Підгодовування птахів взимку
+                    </li>
+                    <li class="list-disc">
+                        Участь у громадських проектах
+                    </li>
+                </ul>
+            </div>
+            <div class="md:mr-8 w-1/2">
+                <img src="./images/takecare.png" alt="birds" class="w-full h-full object-contain">
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-custom1-700 text-white p-4 text-center sticky bottom-0">
+        &copy; 2024 Пташиний світ України
+    </footer>
+
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
